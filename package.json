@@ -1,0 +1,22 @@
+{
+	"name": "project-template",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"watch:ts": "tsc --watch",
+		"watch:scss": "sass src/_scss/style.scss src/css/style.css --no-source-map --watch",
+		"watch:bs": "browser-sync start --server src --files 'src/**/*'",
+		"watch": "run-p watch:ts watch:scss watch:bs"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs",
+	"devDependencies": {
+		"browser-sync": "^3.0.4",
+		"npm-run-all2": "^8.0.4",
+		"sass": "^1.97.3",
+		"typescript": "^5.9.3"
+	}
+}
