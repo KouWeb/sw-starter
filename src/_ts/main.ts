@@ -1,3 +1,2 @@
-const message: string = "Hello, TypeScript!";
-
+const message: string = 'Hello, TypeScript!';
 console.log(message);

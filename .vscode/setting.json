@@ -1,0 +1,29 @@
+{
+	// =================
+	// 基本設定
+	// =================
+	"editor.formatOnSave": true, // 保存時にフォーマットを実行。
+	"editor.defaultFormatter": "esbenp.prettier-vscode", // デフォルトのフォーマッタをPrettierに設定。
+	// 保存時にアクションを実行。
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit" // ESLintの自動修正を実行。
+	},
+	// 拡張子と言語の関連付け。
+	"files.associations": {
+		"*.json": "jsonc"
+	},
+
+	// =================
+	// Prettierの設定。
+	// =================
+	"prettier.useTabs": true, // インデントにタブを使用。
+	"prettier.tabWidth": 4, // タブのサイズ。
+	"prettier.printWidth": 9999, // Prettierの折り返し設定。
+
+	// =================
+	// 各言語の設定
+	// =================
+	"[javascript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	}
+}

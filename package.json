@@ -8,7 +8,8 @@
 		"watch:scss": "sass src/_scss/style.scss src/css/style.css --no-source-map --watch",
 		"watch:bs": "browser-sync start --server src --files 'src/**/*'",
 		"watch": "run-p watch:ts watch:scss watch:bs",
-		"lint": "eslint src/_ts/**/*.ts"
+		"lint": "eslint src/_ts/**/*.ts",
+		"format": "prettier --write src/**/*.html src/_ts/**/*.ts src/_scss/**/*.scss"
 	},
 	"keywords": [],
 	"author": "",
@@ -18,7 +19,9 @@
 		"@eslint/js": "^10.0.1",
 		"browser-sync": "^3.0.4",
 		"eslint": "^10.0.1",
+		"eslint-config-prettier": "^10.1.8",
 		"npm-run-all2": "^8.0.4",
+		"prettier": "^3.8.1",
 		"sass": "^1.97.3",
 		"typescript": "^5.9.3",
 		"typescript-eslint": "^8.56.0"
