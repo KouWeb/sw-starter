@@ -7,16 +7,20 @@
 		"watch:ts": "tsc --watch",
 		"watch:scss": "sass src/_scss/style.scss src/css/style.css --no-source-map --watch",
 		"watch:bs": "browser-sync start --server src --files 'src/**/*'",
-		"watch": "run-p watch:ts watch:scss watch:bs"
+		"watch": "run-p watch:ts watch:scss watch:bs",
+		"lint": "eslint src/_ts/**/*.ts"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
-	"type": "commonjs",
+	"type": "module",
 	"devDependencies": {
+		"@eslint/js": "^10.0.1",
 		"browser-sync": "^3.0.4",
+		"eslint": "^10.0.1",
 		"npm-run-all2": "^8.0.4",
 		"sass": "^1.97.3",
-		"typescript": "^5.9.3"
+		"typescript": "^5.9.3",
+		"typescript-eslint": "^8.56.0"
 	}
 }
