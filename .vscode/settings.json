@@ -1,18 +1,16 @@
 {
-	// =================
-	// 基本設定
-	// =================
-	"editor.formatOnSave": true, // 保存時にフォーマットを実行。
-	"editor.defaultFormatter": "esbenp.prettier-vscode", // デフォルトのフォーマッタをPrettierに設定。
-	// 保存時にアクションを実行。
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.renderWhitespace": "boundary",
+	"editor.formatOnSave": true,
+	"editor.insertSpaces": false,
+	"files.trimFinalNewlines": true,
+	"files.insertFinalNewline": true,
+	"prettier.embeddedLanguageFormatting": "off",
+	"prettier.printWidth": 9999,
+	"prettier.tabWidth": 4,
+	"prettier.useTabs": true,
+	"html.format.wrapLineLength": 0,
 	"editor.codeActionsOnSave": {
-		"source.fixAll.eslint": "explicit" // ESLintの自動修正を実行。
-	},
-
-	// =================
-	// 各言語の設定
-	// =================
-	"[javascript]": {
-		"editor.defaultFormatter": "vscode.typescript-language-features"
+		"source.fixAll.eslint": "explicit"
 	}
 }
