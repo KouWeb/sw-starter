@@ -1,19 +1,25 @@
-import eslint from "@eslint/js";
-import tseslint from "typescript-eslint";
-import prettier from "eslint-config-prettier";
+import eslint from '@eslint/js';
+import tseslint from 'typescript-eslint';
+import prettier from 'eslint-config-prettier';
 
-export default tseslint.config(
+export default [
 	eslint.configs.recommended,
-	tseslint.configs.recommended,
+	...tseslint.configs.recommended,
 	prettier,
 	{
 		languageOptions: {
 			globals: {
-				console: "readonly",
+				console: 'readonly',
 			},
 		},
 		rules: {
-			"no-console": "warn"
-		}
+			'no-console': 'warn',
+		},
 	},
-);
+	{
+		files: ['**/*.cjs'],
+		languageOptions: {
+			sourceType: 'commonjs',
+		},
+	},
+];

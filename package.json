@@ -6,7 +6,7 @@
 	"scripts": {
 		"watch:ts": "tsc --watch",
 		"watch:scss": "sass src/_scss/style.scss src/css/style.css --no-source-map --watch",
-		"watch:bs": "browser-sync start --server src --files 'src/**/*'",
+		"watch:bs": "browser-sync start --config bs-config.cjs",
 		"watch": "run-p watch:ts watch:scss watch:bs",
 		"lint": "eslint src/_ts/**/*.ts src/js/**/*.js",
 		"format": "prettier --write src/**/*.html src/_ts/**/*.ts src/_scss/**/*.scss"
