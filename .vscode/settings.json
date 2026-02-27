@@ -1,16 +1,12 @@
 {
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit"
+	},
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.renderWhitespace": "boundary",
 	"editor.formatOnSave": true,
 	"editor.insertSpaces": false,
 	"files.trimFinalNewlines": true,
 	"files.insertFinalNewline": true,
-	"prettier.embeddedLanguageFormatting": "off",
-	"prettier.printWidth": 9999,
-	"prettier.tabWidth": 4,
-	"prettier.useTabs": true,
-	"html.format.wrapLineLength": 0,
-	"editor.codeActionsOnSave": {
-		"source.fixAll.eslint": "explicit"
-	}
+	"html.format.wrapLineLength": 0
 }
