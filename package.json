@@ -8,22 +8,23 @@
 		"watch:scss": "sass src/_scss/style.scss src/css/style.css --no-source-map --watch",
 		"watch:bs": "browser-sync start --config bs-config.cjs",
 		"watch": "run-p watch:ts watch:scss watch:bs",
-		"lint": "eslint src/_ts/**/*.ts src/js/**/*.js",
-		"format": "prettier --write src/**/*.html src/_ts/**/*.ts src/_scss/**/*.scss"
+		"lint": "biome lint src/_ts src/js",
+		"lint:scss": "stylelint src/_scss/**/*.scss",
+		"format": "biome format --write src",
+		"format:scss": "prettier --write src/_scss/**/*.scss"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"type": "module",
 	"devDependencies": {
-		"@eslint/js": "^10.0.1",
+		"@biomejs/biome": "2.4.4",
 		"browser-sync": "^3.0.4",
-		"eslint": "^10.0.1",
-		"eslint-config-prettier": "^10.1.8",
 		"npm-run-all2": "^8.0.4",
 		"prettier": "^3.8.1",
 		"sass": "^1.97.3",
-		"typescript": "^5.9.3",
-		"typescript-eslint": "^8.56.0"
+		"stylelint": "^17.4.0",
+		"stylelint-config-standard-scss": "^17.0.0",
+		"typescript": "^5.9.3"
 	}
 }

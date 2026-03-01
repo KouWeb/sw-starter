@@ -1,12 +1,19 @@
 {
 	"editor.codeActionsOnSave": {
-		"source.fixAll.eslint": "explicit"
+		"source.fixAll.biome": "explicit",
+		"source.organizeImports.biome": "explicit",
+		"source.fixAll.stylelint": "explicit"
 	},
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"editor.renderWhitespace": "boundary",
+	"editor.defaultFormatter": "biomejs.biome",
 	"editor.formatOnSave": true,
 	"editor.insertSpaces": false,
+	"editor.renderWhitespace": "boundary",
+	"editor.tabSize": 4,
 	"files.trimFinalNewlines": true,
 	"files.insertFinalNewline": true,
-	"html.format.wrapLineLength": 0
+	"html.format.wrapLineLength": 0,
+	"stylelint.validate": ["scss"],
+	"[scss]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
 }

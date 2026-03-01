@@ -1,11 +1,5 @@
 {
-	"bracketSpacing": true,
-	"embeddedLanguageFormatting": "off",
-	"printWidth": 9999,
-	"proseWrap": "preserve",
-	"semi": true,
-	"singleQuote": true,
+	"singleQuote": false,
 	"tabWidth": 4,
-	"trailingComma": "all",
 	"useTabs": true
 }
