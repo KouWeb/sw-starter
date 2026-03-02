@@ -7,8 +7,9 @@
 		"watch:ts": "tsc --watch",
 		"watch:scss": "sass src/_scss/style.scss src/css/style.css --no-source-map --watch",
 		"watch:bs": "browser-sync start --config bs-config.cjs",
-		"watch": "run-p watch:ts watch:scss watch:bs",
-		"lint": "biome lint src/_ts src/js",
+		"watch:all": "run-p watch:ts watch:scss watch:bs",
+		"lint:script": "biome lint src/_ts src/js",
+		"lint:html": "markuplint src/*.html",
 		"lint:scss": "stylelint src/_scss/**/*.scss",
 		"format": "biome format --write src",
 		"format:scss": "prettier --write src/_scss/**/*.scss"
@@ -20,6 +21,7 @@
 	"devDependencies": {
 		"@biomejs/biome": "2.4.4",
 		"browser-sync": "^3.0.4",
+		"markuplint": "^4.14.1",
 		"npm-run-all2": "^8.0.4",
 		"prettier": "^3.8.1",
 		"sass": "^1.97.3",

@@ -2,6 +2,7 @@
 	"recommendations": [
 		"biomejs.biome",
 		"stylelint.vscode-stylelint",
-		"esbenp.prettier-vscode"
+		"esbenp.prettier-vscode",
+		"yusukehirao.vscode-markuplint"
 	]
 }
