@@ -1,8 +1,7 @@
 {
-	"name": "project-template",
+	"name": "sw-starter",
 	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
+	"description": "静的サイト制作向けのプロジェクトテンプレートです。",
 	"scripts": {
 		"watch:ts": "tsc --watch",
 		"watch:scss": "sass src/_scss/style.scss src/css/style.css --no-source-map --watch",
