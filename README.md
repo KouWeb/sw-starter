@@ -112,6 +112,29 @@ sw-starter/
 
 ---
 
+## 設定について
+
+フォーマッターおよび診断の設定は、各ツールの推奨設定やデフォルト設定になっています。
+
+プロジェクトに応じてカスタマイズしたい場合は、各公式ドキュメント等を参照してください。
+
+---
+
+## 使用ツール
+
+| ツール                                   | 役割                                   |
+| ---------------------------------------- | -------------------------------------- |
+| TypeScript                               | 型安全なJavaScriptを書く               |
+| Sass                                     | SCSSをCSSにコンパイル                  |
+| browser-sync                             | ローカルサーバー・ブラウザ自動リロード |
+| npm-run-all                              | 複数コマンドの同時実行                 |
+| [Biome](https://biomejs.dev/ja/)         | TS・JS・HTMLのフォーマット＋lint       |
+| [Prettier](https://prettier.io/)         | SCSSのフォーマット                     |
+| [Stylelint](https://stylelint.io/)       | SCSSのlint                             |
+| [Markuplint](https://markuplint.dev/ja/) | HTMLのlint・バリデート                 |
+
+---
+
 ## VS Code拡張機能
 
 以下の拡張機能をインストールすると、ファイル保存時に自動でフォーマット・lintが実行されます。
@@ -122,18 +145,3 @@ sw-starter/
 | Prettier   | `esbenp.prettier-vscode`        | SCSSのフォーマット               |
 | Stylelint  | `stylelint.vscode-stylelint`    | SCSSのlint                       |
 | Markuplint | `yusukehirao.vscode-markuplint` | HTMLのlint・バリデート           |
-
----
-
-## 使用ツール
-
-| ツール       | 役割                                   |
-| ------------ | -------------------------------------- |
-| TypeScript   | 型安全なJavaScriptを書く               |
-| Sass         | SCSSをCSSにコンパイル                  |
-| browser-sync | ローカルサーバー・ブラウザ自動リロード |
-| npm-run-all  | 複数コマンドの同時実行                 |
-| Biome        | TS・JS・HTMLのフォーマット＋lint       |
-| Prettier     | SCSSのフォーマット                     |
-| Stylelint    | SCSSのlint                             |
-| Markuplint   | HTMLのlint・バリデート                 |
