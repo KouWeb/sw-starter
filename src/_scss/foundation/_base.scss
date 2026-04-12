@@ -1,0 +1,23 @@
+@charset "UTF-8";
+@use "../global" as g;
+
+:root {
+	/* カラー設定 */
+	--color-default: #333;
+	--color-primary: #1f4cac;
+	--color-secondary: #61acde;
+	--color-accent: #1c8c5f;
+}
+
+html {
+	font-family: "Noto Sans JP", sans-serif;
+	color: var(--color-default);
+}
+
+body {
+	background-color: #eee;
+
+	@include g.media-df(md) {
+		background-color: var(--color-accent);
+	}
+}

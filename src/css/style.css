@@ -1,3 +1,64 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/font/noto-sans-jp-v56-japanese-regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/font/noto-sans-jp-v56-japanese-500.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/font/noto-sans-jp-v56-japanese-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/font/noto-sans-jp-v56-japanese-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/font/noto-sans-jp-v56-japanese-800.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/font/noto-sans-jp-v56-japanese-900.woff2") format("woff2");
+}
+:root {
+  /* カラー設定 */
+  --color-default: #333;
+  --color-primary: #1f4cac;
+  --color-secondary: #61acde;
+  --color-accent: #1c8c5f;
+}
+
+html {
+  font-family: "Noto Sans JP", sans-serif;
+  color: var(--color-default);
+}
+
 body {
-	color: #333;
+  background-color: #eee;
+}
+@media screen and (max-width:768px) {
+  body {
+    background-color: var(--color-accent);
+  }
 }
