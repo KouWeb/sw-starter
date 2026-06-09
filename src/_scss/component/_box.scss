@@ -1,0 +1,27 @@
+@charset "UTF-8";
+@use "../global" as g;
+
+.c-box-scroll {
+	padding: 20px;
+	border: 1px solid #ccc;
+
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+
+	@include g.media-df(md) {
+		&__image {
+			width: auto;
+			height: auto;
+			max-width: none;
+		}
+	}
+
+	&__icon {
+		&::before {
+			background-image: url();
+		}
+		&::after {
+			display: none;
+		}
+	}
+}

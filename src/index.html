@@ -5,10 +5,31 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Static Web Starter</title>
 		<link rel="stylesheet" href="/css/reset.css">
+		<link rel="stylesheet" href="/css/scroll-hint.css">
 		<link rel="stylesheet" href="/css/style.css">
 	</head>
 	<body>
-		<h1>Hello, World!</h1>
+		<div class="l-wrapper">
+			<main class="l-main">
+				<div class="l-main__content">
+					<div class="c-box-scroll js-scrollable">
+						<img class="c-box-scroll__image" src="https://picsum.photos/seed/picsum/1200/300" alt="" width="1200" height="300">
+					</div>
+					<img src="https://picsum.photos/seed/picsum/1200/300" alt="" width="1200" height="300">
+				</div>
+			</main>
+		</div>
 		<script type="module" src="/js/main.js"></script>
+		<script type="module" src="/js/scroll-hint.min.js"></script>
+		<script>
+			window.addEventListener('DOMContentLoaded', function () {
+				new ScrollHint('.js-scrollable', {
+					i18n: {
+						scrollable: "スクロール<br>できます"
+					},
+					scrollHintIconAppendClass: "c-box-scroll__icon"
+				});
+			});
+		</script>
 	</body>
 </html>

@@ -62,3 +62,35 @@ body {
     background-color: var(--color-accent);
   }
 }
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.c-box-scroll {
+  padding: 20px;
+  border: 1px solid #ccc;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+@media screen and (max-width:768px) {
+  .c-box-scroll__image {
+    width: auto;
+    height: auto;
+    max-width: none;
+  }
+}
+.c-box-scroll__icon::before {
+  background-image: url();
+}
+.c-box-scroll__icon::after {
+  display: none;
+}
+
+.l-main {
+  max-width: 960px;
+  padding: 50px;
+  margin: 0 auto;
+}
