@@ -145,3 +145,9 @@ sw-starter/
 | Prettier   | `esbenp.prettier-vscode`        | SCSSのフォーマット               |
 | Stylelint  | `stylelint.vscode-stylelint`    | SCSSのlint                       |
 | Markuplint | `yusukehirao.vscode-markuplint` | HTMLのlint・バリデート           |
+
+## 更新履歴
+
+| 更新日     | 内容                                |
+| ---------- | ----------------------------------- |
+| 2026/10/30 | Node.js、各パッケージアップデート。 |
